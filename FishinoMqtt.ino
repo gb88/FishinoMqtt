@@ -19,12 +19,15 @@
 
 // here pur SSID of your network
 // inserire qui lo SSID della rete WiFi
-#define MY_SSID	"FASTWEB-1"
+#define MY_SSID	"ssid"
 
 // here put PASSWORD of your network. Use "" if none
 // inserire qui la PASSWORD della rete WiFi -- Usare "" se la rete non ￨ protetta
-#define MY_PASS	"x12wdx12wd"
+#define MY_PASS	"password"
 
+// define SECURE to use secure client with SSL
+// definire SECURE per usare un client SSL
+#define SECURE
 // here put required IP address (and maybe gateway and netmask!) of your Fishino
 // comment out this lines if you want AUTO IP (dhcp)
 // NOTE : if you use auto IP you must find it somehow !
@@ -63,7 +66,7 @@
 #endif
 
 // Initialize the Fishino client library
-#define SECURE
+
 #ifdef SECURE
   FishinoSecureClient client;
 #else
